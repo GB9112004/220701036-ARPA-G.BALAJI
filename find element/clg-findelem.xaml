@@ -1,0 +1,168 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="clg_findelem" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="clg_findelem_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="clg_findelem" sap:VirtualizedContainerService.HintSize="559.9999999999999,1236.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Home  Rajalakshmi Engineering College" sap:VirtualizedContainerService.HintSize="520.6666666666666,1214" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="26282a1c-fbb5-4fde-8096-b8569b0c1515" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486.6666666666667,972.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="stringImage" />
+              <Variable x:TypeArguments="x:Boolean" Name="blnLogo" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:UiElementExists DisplayName="Element Exists 'IMG'" Exists="[blnLogo]" sap:VirtualizedContainerService.HintSize="452.6666666666667,139.33333333333334" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d3e100a6-0d77-437d-a4f4-9ea73c533496" InformativeScreenshot="b445e8b7bae6a11a4bf4e9e6bffb1024" Selector="&lt;webctrl tag='IMG' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="452.6666666666667,118" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[blnLogo]" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452.6666666666667,655.3333333333334" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,550" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'IMG'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                    <ui:WaitUiElementAppear.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5df4d847-f74a-4fa4-bf77-67000c980477" InformativeScreenshot="e0cab0e71a0d43381ca36ecf8ecaa9f0" Selector="&lt;webctrl tag='IMG' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:WaitUiElementAppear.Target>
+                  </ui:WaitUiElementAppear>
+                  <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="src" DisplayName="Get Attribute 'IMG'" sap:VirtualizedContainerService.HintSize="382,242" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[stringImage]" ScopeIdentifier="26282a1c-fbb5-4fde-8096-b8569b0c1515" Version="V4">
+                    <uix:NGetAttributeGeneric.Target>
+                      <uix:TargetAnchorable BrowserURL="rajalakshmi.org" ContentHash="x2M9NzEdWkSOS5WDoel8Xg" DesignTimeRectangle="150, 147, 504, 163" DesignTimeScaleFactor="1.5" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' class='logo' aaname='Rajalakshmi Engineering College (REC), Chennai' /&gt;" Guid="5c0673a5-fd6a-4349-9faf-d455d95a12bf" InformativeScreenshot="b6adcb57c696480a6bfb78e266df2ee9.png" Reference="UAGov7W-KUKfdb1Zj0nSxA/wpHL5vU8KkK5n9wNwt2LPQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Rajalakshmi Engineering College (REC)' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                    </uix:NGetAttributeGeneric.Target>
+                  </uix:NGetAttributeGeneric>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382,108.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[stringImage]" />
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" ContentHash="xcySgQewlUecyF6fUghQ3A" IconBase64="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" InformativeScreenshot="3c7f15b4d2523efa4a10e321335fcfbc.jpg" Reference="UAGov7W-KUKfdb1Zj0nSxA/WKLg2AxmBEOrY0mBMIhkPQ" Selector="&lt;html app='chrome.exe' title='Home | Rajalakshmi Engineering College (REC)' /&gt;" Title="Home | Rajalakshmi Engineering College (REC)" Url="https://www.rajalakshmi.org/" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
